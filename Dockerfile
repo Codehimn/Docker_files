@@ -1,7 +1,8 @@
 FROM fedora
 MAINTAINER Bill C Riemers https://github.com/docbill
 
-ARG URL=https://download.sublimetext.com/sublime_text_3_build_3103_x64.tar.bz2
+# sublime_text_3 build 3126
+ARG URL=https://download.sublimetext.com/sublime_text_3_build_3126_x64.tar.bz2
 RUN dnf update -y && \
     dnf install -y git sudo curl wget bzip2 tar libX11 gtk2-devel PackageKit-gtk3-module libcanberra-gtk2 libcanberra-gtk3 firefox && \
     dnf clean -y all
